@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* 공통스타일 */
+body {font-family: "NanumSquare", Dotum, Sans-serif; font-weight: 500; letter-spacing: -0.5px; color: #000;}
+/* "NanumSquareRound" */
+figure {position: relative;}
+img {max-width: 100%;}
+input, select {-webkit-appearance: none; -moz-appearance: none; appearance: none; -webkit-border-radius: 0;}
+select::-ms-expand {display: none;}
+
+.wrapper {position: relative; min-width: 320px; max-width: 640px; margin: 0 auto; background: #5c4739;}
+.group {position: relative; box-sizing: border-box; width: 100%; max-width: 640px; margin: 0 auto;}
+.group:before, .group:after {content: ''; clear: both; display: table;}
+
+/* 폰트 */
+.fc-red {color: #d80000;}
+
+/* 전화버튼 */
+.btn-call {display: inline-block; padding: 0 16px; border-radius: 25px; background: #fff;}
+.btn-call span {display: inline-block; margin-left: 10px;}
+
+/* 헤더 */
+.header {z-index: 999; position: fixed; box-sizing: border-box; width: 100%; top: 0; left: 0; padding: 10px 0 9px; background: #000;}
+.header .header-area {padding: 0 11px;}
+.header .header-area .logo {float: left; width: 26.7%; max-width: 96px;}
+.header .header-area .logo a {display: block;}
+.header .header-area .logo a img {width: 100%;}
+.header .header-area .gnb {float: right;}
+.header .header-area .gnb a {font-weight: 600; line-height: 22px;}
+.header .header-area .gnb .menu {float: left;}
+.header .header-area .gnb .menu li {position: relative; float: left; padding: 0 6px;}
+.header .header-area .gnb .menu li a {display: inline-block; font-size: 13px; color: #fff;}
+.header .header-area .gnb .menu .item-3 {padding-right: 2px;}
+.header .header-area .gnb .menu .item-3 a {color: #fff000;}
+ 
+
+/* 푸터 */
+.footer {padding: 27px 0 24px; text-align: center; background: #d2d2d2;}
+.footer .footer-area {padding: 0 11px;}
+.footer .footer-area .f-logo {width: 118px; margin: 0 auto; margin-bottom: 10px;}
+.footer .footer-area .f-logo img {width: 100%;}
+.footer .footer-area .adress {font-size: 10px; line-height: 16px; color: #292929;}
+.footer .footer-area .adress .ml {display: inline-block; width: 5px;}
+.footer .footer-area .adress small {display: block;}
+.footer .footer-area .btn-call {position: relative; display: block; max-width: 315px; margin: 10px auto 0; font-size: 18px; font-weight: 600; line-height: 40px; color: #434343;}
+
+
+/* 콘텐츠 */
+.contents {position: relative; margin: 0 auto; padding: 41px 0 0 0; background: #fff;}
+.contents .con-area {text-align: center; background: #fff;}
+.contents div[class*='-sec'] {position: relative; box-sizing: border-box; padding: 0 11px;}
+.contents div[class*='-sec']:before, .contents div[class*='-sec']:after {content: ''; clear: both; display: table;}
+/* 콘텐츠 타이틀 */
+.contents .con-area .con-tit {display: block; text-align: left;}
+.contents .con-area .con-tit span {display: inline-block; padding-bottom: 6px; font-size: 25px; font-weight: 100; line-height: 25px; letter-spacing: -1px; text-align: left; border-bottom: 2px solid #000;}
+/*  */
+.contents .con-area .r-box {padding-top: 21px;}
+/* 도움글 */
+.contents .con-area .l-box .con-txt {position: relative; box-sizing: border-box; font-size: 12px; line-height: 18px; word-break: keep-all;}
+.contents .con-area .l-box .con-txt .p-0 {display: block; margin-bottom: 10px; font-size: 18px; font-weight: 400; line-height: 18px;}
+.contents .con-area .l-box .con-txt .con-list {}
+.contents .con-area .l-box .con-txt .con-list li {position: relative;}
+
+
+/* 메인 */
+.contents div.main-sec {padding: 18px 0 0 0;}
+.contents .main-sec .main-tit {box-sizing: border-box; width: 100%; padding: 0 11px; margin-bottom: 20px;}
+.contents .main-sec .main-img {position: relative;}
+.contents .main-sec .main-img figure {float: right; width: 49.5%;}
+.contents .main-sec .main-img figure:first-child {float: left; }
+.contents .main-sec .main-img figure img {width: 100%;}
+
+/* 메뉴안내 */
+.contents div.about-sec {padding-top: 25px; padding-bottom: 31px; background: #f3f3f3;}
+.contents .about-sec .l-box .con-txt {margin-top: 17px;}
+
+/* 오시는 길 */
+.contents div.way-sec {padding-top: 27px; padding-bottom: 18px;}
+.contents .way-sec .map-img {display: inline-block; border: 1px solid #828282; border-radius: 1px;}
+.contents .way-sec .map-img img {width: 100%;}
+/* 버튼 */
+.contents .way-sec .btn-box {position: absolute; width: 184px; top: 27px; right: 11px;}
+.contents .way-sec .btn-box .btn-map {float: left; display: block; position: relative; box-sizing: border-box; width: 91px; font-size: 12px; font-weight: 600; letter-spacing: -1px; line-height: 30px; text-align: center; border: 1px solid #606060;}
+.contents .way-sec .btn-box .btn-map:first-child {border-right: 0;}
+.contents .way-sec .btn-box .btn-map.naver {color: #288f00;}
+.contents .way-sec .btn-box .btn-map.daum {color: #ff7800;}
+/* 도움말 */
+.contents .way-sec .l-box .con-txt {margin-top: 15px;}
+/* 지도이미지 */
+.contents .way-sec .r-box {}
+.contents .way-sec .r-box .map-box {}
+.contents .way-sec .r-box .map-box + .map-box {margin-top: 12px;}
+.contents .way-sec .r-box .map-box .map-tit {margin-bottom: 7px; font-size: 15px; text-align: left; line-height: 15px;}
+
+/* 예약하기/방문예약 */
+.contents div.visit-sec {padding-top: 30px; padding-bottom: 26px;; background: #f3f3f3;}
+.contents .visit-sec .l-box .con-txt {margin-top: 19px;}
+.contents .visit-sec .r-box {display: inline-block; /*width: 256px;*/ margin: 0 auto; text-align: left;}
+.contents .visit-sec .r-box .form-tit {font-size: 18px; line-height: 18px;}
+.contents .visit-sec .r-box .wd-r {width: 190px;}
+.contents .visit-sec .r-box .btn-visit {margin: 10px 0 0 65px; display: inline-block; position: relative; height: 38px; font-size: 15px; font-weight: 600; text-align: center; line-height: 38px; color: #fff; background: #a8a8a8;}
+/* form */
+.contents .visit-sec .r-box .form-box {position: relative; padding-top: 5px;}
+.contents .visit-sec .r-box .form-box .d-row {position: relative; display: table; margin-top: 6px;}
+.contents .visit-sec .r-box .form-box .d-row .s-lbl, .contents .visit-sec .r-box .form-box .d-row .in-txt, .contents .visit-sec .r-box .form-box .d-row .sel-box, .contents .visit-sec .r-box .form-box .d-row .date-box {display: table-cell; box-sizing: border-box; font-family: "NanumSquare", Dotum, Sans-serif; font-weight: 500; letter-spacing: -0.5px;  vertical-align: middle; color: #000;}
+.contents .visit-sec .r-box .form-box .d-row .in-txt, .contents .visit-sec .r-box .form-box .d-row .sel-box {height: 32px; line-height: 32px; border: 1px solid #999596; border-radius: 1px; background: #fff;}
+.contents .visit-sec .r-box .form-box .d-row .s-lbl {width: 65px; font-size: 14px;}
+.contents .visit-sec .r-box .form-box .d-row .in-txt {padding: 0 8px; font-size: 13px;}
+.contents .visit-sec .r-box .form-box .d-row .in-txt::placeholder, .contents .visit-sec .r-box .form-box .d-row .in-txt:-ms-input-placeholder, .contents .visit-sec .r-box .form-box .d-row .in-txt::-ms-input-placeholder {color: #484747;}
+/* calendar */
+.contents .visit-sec .r-box .form-box .d-row .date-box {position: relative; overflow: hidden; height: 32px; border: 1px solid #999596; border-radius: 1px; background: #fff;}
+.contents .visit-sec .r-box .form-box .d-row .date-box .in-date {box-sizing: border-box; width: 158px; height: 100%; padding: 0 10px; font-size: 14px; line-height: 32px; border: 0;}
+.contents .visit-sec .r-box .form-box .d-row .date-box .btn-date {position: absolute; box-sizing: border-box; width: 30px; height: 100%; top: 0; right: 0; border: 0; border-left: 1px solid #999596; background: #e6e6e6 url(http://img.chicagobbq.co.kr/pork5900/ico_cal.png) no-repeat center; background-size: 12px auto;}
+/* select */
+.contents .visit-sec .r-box .form-box .d-row .sel-box {position: relative; background: #fff;}
+.contents .visit-sec .r-box .form-box .d-row .sel-txt { z-index: 2; position: relative; display: block; box-sizing: border-box; width: 100%; height: 100%; padding: 0 31px 0 10px; font-size: 15px; border: 0; background: none;} 
+.contents .visit-sec .r-box .form-box .d-row .btn-sel {z-index: 1; position: absolute; box-sizing: border-box; width: 30px; height: 30px; top: 0px; right: 0px; border: 0; border-left: 1px solid #999596; background: #e6e6e6;}
+.contents .visit-sec .r-box .form-box .d-row .btn-sel:before {content: '▼'; display: block; width: 100%; height: 100%; font-size: 10px; font-family: Dotum, Sans-serif; text-align: center; line-height: 32px;}

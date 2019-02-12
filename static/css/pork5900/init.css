@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* 공통스타일 */
+body {font-family: "NanumSquare", Dotum, Sans-serif; font-weight: 500; letter-spacing: -0.5px; color: #000;}
+/* "NanumSquareRound" */
+figure {position: relative;}
+img {max-width: 100%;}
+input, select {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+select::-ms-expand {display: none;}
+
+.wrapper {position: relative; min-width: 1070px; background: #5c4739;}
+.group {position: relative; box-sizing: border-box; width: 1070px; margin: 0 auto;}
+.group:before, .group:after {content: ''; clear: both; display: table;}
+.lt-ie8 .group {zoom: 1;}
+
+/* 폰트 */
+.fc-red {color: #d80000;}
+
+/* 전화버튼 */
+.btn-call {cursor: default; display: inline-block; padding: 0 18px; border-radius: 30px; background: #fff;}
+.btn-call span {display: inline-block; margin-left: 9px;}
+
+
+/* 헤더 */
+.header {z-index: 999; position: fixed; width: 100%; top: 0; left: 0; padding: 20px 0; background: #000;}
+.header .header-area {}
+.header .header-area .logo {float: left;}
+.header .header-area .logo a {}
+.header .header-area .logo a img {}
+.header .header-area .gnb {float: right;}
+.header .header-area .gnb a {font-weight: 600; line-height: 36px;}
+.header .header-area .gnb .menu {float: left;}
+.header .header-area .gnb .menu li {position: relative; float: left; padding: 0 12px;}
+.header .header-area .gnb .menu li a {font-size: 20px; color: #fff;}
+.header .header-area .gnb .menu .item-3 a {color: #fff000;}
+.header .header-area .gnb .btn-call {cursor: default; float: left; margin-left: 12px; font-size: 18px; color: #000;}
+  
+
+/* 푸터 */
+.footer {}
+.footer .footer-area {padding: 35px 47px 60px 41px; background: #d2d2d2;}
+.footer .footer-area .f-logo {float: left; margin-top: 3px;}
+.footer .footer-area .f-logo img {}
+.footer .footer-area .adress {float: left; padding-left: 25px; font-size: 15px; line-height: 24px; color: #292929;}
+.footer .footer-area .adress .ml {display: inline-block; width: 10px;}
+.footer .footer-area .adress small {display: block; font-size: 14px;}
+.footer .footer-area .btn-call {position: absolute; top: 32px; right: 41px; font-size: 21px; font-weight: 600; line-height: 42px; color: #434343;}
+
+
+/* 콘텐츠 */
+.contents {position: relative; margin: 0 auto; padding: 76px 0 0 0; background: url(http://img.chicagobbq.co.kr/pork5900/bg.jpg) no-repeat center top; background-size: 100% auto;}
+.contents .con-area {min-height: 1364px; text-align: center; background: #fff;}
+.contents div[class*='-sec'] {position: relative; box-sizing: border-box; padding: 51px 45px 66px;}
+.contents div[class*='-sec']:before, .contents div[class*='-sec']:after {content: ''; clear: both; display: table;}
+/* 콘텐츠 타이틀 */
+.contents .con-area .con-tit {display: block; text-align: left;}
+.contents .con-area .con-tit span {display: inline-block; padding-bottom: 20px; font-size: 73px; font-weight: 100; line-height: 73px; letter-spacing: -1px; text-align: left; border-bottom: 2px solid #000;}
+/* 좌측영역 */
+.contents .con-area .l-box {float: left; position: relative; box-sizing: border-box; width: 30%; text-align: left; color: #000;}
+.contents .con-area .l-box .con-txt {position: relative; box-sizing: border-box; padding-left: 4px; font-size: 16px; line-height: 26px; word-break: keep-all;}
+.contents .con-area .l-box .con-txt.type-2 {padding-left: 20px;}
+.contents .con-area .l-box .con-txt p {}
+.contents .con-area .l-box .con-txt .p-0 {display: block; padding: 26px 0 15px; font-size: 30px; font-weight: 100; line-height: 30px;}
+.contents .con-area .l-box .con-txt .con-list {}
+.contents .con-area .l-box .con-txt .con-list li {position: relative;}
+.contents .con-area .l-box .con-txt .con-list li:before {content: ''; display: block; position: absolute; width: 9px; height: 9px; top: 9px; left: -18px; border-radius: 50%; background: #000;}
+/* ie8 텍스트 간격 */
+.ie8 .contents .con-area .l-box .con-txt {letter-spacing: -1px;}
+
+/* 우측영역 */
+.contents .con-area .r-box {float: right; position: relative; box-sizing: border-box; width: 70%; margin-top: -45px; padding-left: 35px; text-align: left;}
+
+
+/* 메인 */
+.contents div.main-sec {padding-top: 57px; padding-bottom: 67px;}
+.contents .main-sec .main-tit {width: 100%;}
+
+/* 메뉴안내 */
+.contents div.about-sec {background: #f3f3f3;}
+.contents div.about-sec .r-box figure {width: 100%; padding-left: 0; text-align: right;}
+ 
+/* 오시는 길 */
+.contents div.way-sec {padding-bottom: 77px;}
+.contents .way-sec .map-img {display: inline-block; border: 1px solid #828282; border-radius: 1px;}
+.contents .way-sec .map-img img {width: 100%;}
+/* 좌측 지도 */
+.contents .way-sec .l-box {}
+.contents .way-sec .l-box .l-map {margin-top: 15px;}
+.contents .way-sec .l-box .l-map .map-img, .contents div.way-sec .l-box .btn-box {width: 260px;}
+.contents .way-sec .l-box .btn-box {position: relative; margin-top: 17px;}
+.contents .way-sec .l-box .btn-box .btn-map {float: right; display: block; position: relative; box-sizing: border-box; width: 120px; font-size: 20px; font-weight: 600; letter-spacing: -1.2px; line-height: 46px; text-align: center; border: 1px solid #606060;}
+.contents .way-sec .l-box .btn-box .btn-map:first-child {float: left;}
+.contents .way-sec .l-box .btn-box .btn-map.naver {color: #288f00;}
+.contents .way-sec .l-box .btn-box .btn-map.daum {color: #ff7800;}
+/* 지도이미지 */
+.contents .way-sec .r-box {}
+.contents .way-sec .r-box .map-box {}
+.contents .way-sec .r-box .map-box + .map-box {margin-top: 28px;}
+.contents .way-sec .r-box .map-box .map-tit {margin-bottom: 13px; font-size: 30px; line-height: 30px;}
+
+/* 예약하기/방문예약 */
+.contents div.visit-sec {background: #f3f3f3 url(http://img.chicagobbq.co.kr/pork5900/bg_visit.png) no-repeat bottom 81px right; background-size: 324px auto;}
+.contents .visit-sec .r-box {}
+.contents .visit-sec .r-box .wd-r {width: 238px;}
+.contents .visit-sec .r-box .form-tit {font-size: 30px; line-height: 30px;}
+.contents .visit-sec .r-box .btn-visit {margin: 17px 0 0 105px; display: inline-block; position: relative; height: 61px; font-size: 24px; font-weight: 600; text-align: center; line-height: 60px; color: #fff; background: #a8a8a8;}
+/* form */
+.contents .visit-sec .r-box .form-box {position: relative; padding-top: 22px;}
+.contents .visit-sec .r-box .form-box .d-row {position: relative; display: table; margin-top: 9px;}
+.contents .visit-sec .r-box .form-box .d-row label {cursor: pointer;}
+.contents .visit-sec .r-box .form-box .d-row .s-lbl, .contents .visit-sec .r-box .form-box .d-row .in-txt, .contents .visit-sec .r-box .form-box .d-row .sel-box, .contents .visit-sec .r-box .form-box .d-row .date-box {display: table-cell; box-sizing: border-box; font-family: "NanumSquare", Dotum, Sans-serif; font-weight: 500; letter-spacing: -0.5px;  vertical-align: middle; color: #000;}
+.contents .visit-sec .r-box .form-box .d-row .in-txt, .contents .visit-sec .r-box .form-box .d-row .sel-box {height: 40px; line-height: 40px; border: 1px solid #999596; border-radius: 1px; background: #fff;}
+.contents .visit-sec .r-box .form-box .d-row .s-lbl {width: 105px; font-size: 22px;}
+.contents .visit-sec .r-box .form-box .d-row .in-txt {padding: 0 10px; font-size: 16px;}
+.contents .visit-sec .r-box .form-box .d-row .in-txt::placeholder, .contents .visit-sec .r-box .form-box .d-row .in-txt:-ms-input-placeholder, .contents .visit-sec .r-box .form-box .d-row .in-txt::-ms-input-placeholder {color: #484747;}
+/* calendar */
+.contents .visit-sec .r-box .form-box .d-row .date-box {position: relative; overflow: hidden; height: 40px; border: 1px solid #999596; border-radius: 1px; background: #fff;}
+.contents .visit-sec .r-box .form-box .d-row .date-box .in-date {box-sizing: border-box; width: 198px; height: 100%; padding: 0 10px; font-size: 16px; line-height: 40px; border: 0;}
+.contents .visit-sec .r-box .form-box .d-row .date-box .btn-date {position: absolute; box-sizing: border-box; width: 38px; height: 100%; top: 0; right: 0; border: 0; border-left: 1px solid #999596; background: #e6e6e6 url(http://img.chicagobbq.co.kr/pork5900/ico_cal.png) no-repeat center; background-size: 14px auto;}
+/* select */
+.contents .visit-sec .r-box .form-box .d-row .sel-box {position: relative; background: #fff;}
+.contents .visit-sec .r-box .form-box .d-row .sel-txt { z-index: 2; cursor: pointer; position: relative; box-sizing: border-box; width: 100%; height: 100%; padding: 0 42px 0 13px; font-size: 18px; border: 0; background: none;} 
+.contents .visit-sec .r-box .form-box .d-row .btn-sel {z-index: 1; position: absolute; box-sizing: border-box; width: 38px; height: 40px; top: 0px; right: 0px; border: 0; border-left: 1px solid #999596; background: #e6e6e6;}
+.contents .visit-sec .r-box .form-box .d-row .btn-sel:before {content: '▼'; display: block; width: 100%; height: 100%; text-align: center; line-height: 40px;}
+/* ie9, ie8 select */
+.ie9 .contents .visit-sec .r-box .form-box .d-row .sel-txt {padding: 0 0 0 13px;}
+.ie8 .contents .visit-sec .r-box .form-box .d-row .sel-txt {padding: 9px 0 9px 13px;}
+.ie9 .contents .visit-sec .r-box .form-box .d-row .btn-sel, .ie8 .contents .visit-sec .r-box .form-box .d-row .btn-sel {display: none;}
